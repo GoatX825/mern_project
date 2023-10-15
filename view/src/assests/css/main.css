@@ -1,0 +1,33 @@
+.category-grid{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* .category-grid figcaption.figure-caption{
+    padding-left: 10px;
+} */
+
+.cat-list-image-container {
+    max-height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cat-list-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-link{
+    text-decoration: none;
+    color: #2a77b8;
+    
+}
+.product-link:hover{
+    text-decoration: underline;
+    color: #07851c;
+    
+}

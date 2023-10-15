@@ -1,0 +1,104 @@
+// First Initialization
+- git init 
+
+// integrate or connect remote(github, gitlab, bitbucket) with local
+- git remote add <name> <url>
+where <name> is the name for your remote
+and   <url> is the link for your remote
+
+// to push or pull code
+
+STEP 1: TO ADD THE FILES
+    - git add .                     >> it add all the changes
+
+    - to add specific files
+    - git add <filename>
+    e.g git add git.txt             >> this will track only  the changes of git.txt file
+
+STEP 2: TO COMMIT (update)
+    - git commit -m "message"
+
+// STEP 3: PULL (OPTIONAL)
+    -git pull <remote_name> <branch_name>
+    e.g git pull origin master
+
+// STEP 4: (OPTIONAL - CONFLICT RESOULTION)
+    - you need to resolve CONFLICT
+    - after RESOULTION, repeat STEP 1, 2
+
+// STEP 5: PUSH THE CODE 
+    - git push <remote_name> <branch_name>
+    e.g git push origin master
+
+    or 
+    - git push <remote_name> <local_branch_name>:<remote_branch>
+
+e.g git push origin master              >> if no master branch, it will be created in remote
+or 
+git push origin master:dev              >> duitai branch(master, dev) ma aauxa code 
+
+// TO VIEW ALL THE BRANCH 
+    - git branch 
+
+// TO CHECKOUT TO A NEW BRANCH FROM CURRENT 
+    #condition is the codes should be committed (step1, step2)
+    - git checkout -b <new_branch_name> 
+    e.g git checkout -b goatx (if no goatx branch)
+    
+    already goatx branch xa vane chai use 
+    git checkout goatx
+    
+    e.g git checkout master (also correct)
+    e.g 
+    git add .
+    git commit -m "Git file changed"
+    git checkout -b goatx                 >> goatx branch will be created 
+
+    git branch
+
+// TO SEE THE FILE STATUS
+    - git status 
+ 
+// TO VIEW ALL THE LOGS IN GIT 
+    - git log 
+
+// TO MERGE LOCAL BRANCHES 
+    FIRST CHECKOUT TO DESTINATION BRANCH
+    git merge <Source_Branch>
+    e.g 
+    git checkout master 
+    git merge goatx 
+
+// TO REMOVE ALL THE CHANGES THAT ARE NOT BEING COMMMITTED 
+    - git stash 
+
+[{
+    to create a file 
+    - touch abc.html 
+    to write to that file 
+    - nano abc.html 
+
+    to create a folder 
+    - mkdir goatx_folder 
+    to delete folder 
+    - rm -rf goatx_folder
+
+    
+}]
+
+// STEP BY STEP PROCEDURES 
+- git inti 
+- git remote add origin https://gitlab.com/m11320/mernbasics.git
+- git add . 
+- git commit -m "New file"
+- git push origin master 
+
+// TO GET ALL THE FILES AND FOLDERS IN YOUR LOCAL MACHINE 
+- git clone https://gitlab.com/m11320/mernbasics.git
+
+// TO PREVENT FILES AND FOLDERS PUSHING TO REMOTE 
+write that folder in .gitignore 
+e.g         .gitignore 
+            /uploads
+            .env
+
